@@ -1,0 +1,2661 @@
+
+> plugins-copy-lf@1.0.0 watch /usr/local/var/lib/grafana/plugins/my-plugin-1127
+> webpack --mode development --watch
+
+
+Webpack is watching the files…
+
+Hash: 89575b3eb2b5ae39cb06
+Version: webpack 4.9.1
+Time: 9405ms
+Built at: 2020-12-11 10:37:47
+                           Asset      Size  Chunks             Chunk Names
+                       module.js  10.2 MiB  module  [emitted]  module
+                   module.js.map  12.2 MiB  module  [emitted]  module
+                     plugin.json  5.12 KiB          [emitted]  
+                       README.md  1.33 KiB          [emitted]  
+                         LICENSE  11.1 KiB          [emitted]  
+partials/annotations.editor.html  3.28 KiB          [emitted]  
+            partials/config.html  11.3 KiB          [emitted]  
+      partials/query.editor.html  2.42 KiB          [emitted]  
+Entrypoint module = module.js module.js.map
+[../node_modules/css-loader/index.js??ref--5-1!./css/query_editor.css] ../node_modules/css-loader??ref--5-1!./css/query_editor.css 1.04 KiB {module} [built]
+[./config_ctrl.ts] 305 bytes {module} [built] [1 error]
+[./css/query_editor.css] 1.11 KiB {module} [built]
+[./datasource.ts] 11.5 KiB {module} [built] [19 errors]
+[./module.ts] 898 bytes {module} [built]
+[./query_ctrl.ts] 1.19 KiB {module} [built] [5 errors]
+[grafana/app/plugins/sdk] external "app/plugins/sdk" 42 bytes {module} [built]
+[lodash] external "lodash" 42 bytes {module} [built]
+[moment] external "moment" 42 bytes {module} [built]
+[0] util (ignored) 15 bytes {module} [built]
+[1] util (ignored) 15 bytes {module} [built]
+    + 161 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(171,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(172,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(175,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 72e681d5d833dd9cc325
+Version: webpack 4.9.1
+Time: 3039ms
+Built at: 2020-12-11 10:40:27
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.6 KiB  module  [emitted]  module
+module.js.map  39.1 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.4 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(171,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(172,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(175,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 75231a3b8c6fbc470691
+Version: webpack 4.9.1
+Time: 277ms
+Built at: 2020-12-11 10:40:27
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.6 KiB  module  [emitted]  module
+module.js.map  39.1 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.4 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(171,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(172,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(175,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 788b2f1bf5ee9f205ed1
+Version: webpack 4.9.1
+Time: 279ms
+Built at: 2020-12-11 10:44:06
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.7 KiB  module  [emitted]  module
+module.js.map  39.3 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.6 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(173,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(174,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(177,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 1ac87010c8a6637a1d69
+Version: webpack 4.9.1
+Time: 216ms
+Built at: 2020-12-11 10:44:11
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.7 KiB  module  [emitted]  module
+module.js.map  39.3 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.6 KiB {module} [built] [21 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(173,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(174,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(177,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(210,20)
+      TS2339: Property 'baseUrl' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 570364af5f3f7980669c
+Version: webpack 4.9.1
+Time: 281ms
+Built at: 2020-12-11 10:44:16
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.7 KiB  module  [emitted]  module
+module.js.map  39.3 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.6 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(173,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(174,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(177,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 88490fb2ecea92b95337
+Version: webpack 4.9.1
+Time: 149ms
+Built at: 2020-12-11 10:44:23
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.7 KiB  module  [emitted]  module
+module.js.map  39.3 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.6 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(173,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(174,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(177,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(181,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(185,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 66c6eac798eb5543096d
+Version: webpack 4.9.1
+Time: 272ms
+Built at: 2020-12-11 10:47:05
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.6 KiB  module  [emitted]  module
+module.js.map  39.1 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./datasource.ts] 11.4 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+    + 9 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(171,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(172,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(175,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.
+Hash: 77d416549ac484b42359
+Version: webpack 4.9.1
+Time: 191ms
+Built at: 2020-12-11 10:57:10
+        Asset      Size  Chunks             Chunk Names
+    module.js  38.6 KiB  module  [emitted]  module
+module.js.map  39.1 KiB  module  [emitted]  module
+Entrypoint module = module.js module.js.map
+[./config_ctrl.ts] 305 bytes {module} [built] [1 error]
+[./datasource.ts] 11.4 KiB {module} [built] [20 errors]
+[./module.ts] 898 bytes {module} [built]
+[./query_ctrl.ts] 1.19 KiB {module} [built] [5 errors]
+    + 7 hidden modules
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts
+./config_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/config_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(5,1)
+      TS6133: 'getBackendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,41)
+      TS6138: Property 'backendSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,61)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(12,82)
+      TS6138: Property '$q' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,21)
+      TS2552: Cannot find name 'defaults'. Did you mean 'default'?
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(63,38)
+      TS2304: Cannot find name 'defaultQuery'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(64,35)
+      TS2339: Property 'argusQueryData' does not exist on type 'ChangeMyNameDatasource'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(93,19)
+      TS2322: Type 'any[]' is not assignable to type 'never'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(98,39)
+      TS2304: Cannot find name 'MutableDataFrame'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(102,43)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(103,44)
+      TS2304: Cannot find name 'FieldType'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(171,20)
+      TS2339: Property 'status' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(172,23)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(175,29)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,30)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(179,53)
+      TS2339: Property 'data' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,30)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(183,52)
+      TS2339: Property 'statusText' does not exist on type '{}'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts
+./datasource.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/datasource.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(1,50)
+      TS6133: 'angularMocks' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/datasource_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(3,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(4,27)
+      TS2307: Cannot find module 'grafana/app/plugins/sdk'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(14,42)
+      TS6138: Property 'templateSrv' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(17,25)
+      TS2339: Property 'target' does not exist on type 'ChangeMyNameQueryCtrl'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts
+./query_ctrl.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/src/query_ctrl.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(1,35)
+      TS6133: 'sinon' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(4,15)
+      TS2307: Cannot find module 'q'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,1)
+      TS6133: 'moment' is declared but its value is never read.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/query_ctrl_specs.ts(5,20)
+      TS2307: Cannot find module 'moment'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/common.ts(1,21)
+      TS6053: File '/usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/monaco-editor/monaco.d.ts' not found.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/template_srv_stub.ts(1,15)
+      TS2307: Cannot find module 'lodash'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/specs/lib/time_srv_stub.ts(2,22)
+      TS2307: Cannot find module 'app/core/utils/datemath'.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.6/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(10,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(11,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(12,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/ts3.4/base.d.ts(13,1)
+      TS1084: Invalid 'reference' directive syntax.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(3,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(57,68)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,94)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,101)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(66,104)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,98)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,105)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(68,108)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,47)
+      TS1144: '{' or ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,53)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(76,56)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@types/node/assert.d.ts(106,61)
+      TS1005: ';' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,24)
+      TS1005: ',' expected.
+
+ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts
+[tsl] ERROR in /usr/local/var/lib/grafana/plugins/my-plugin-1127/node_modules/@grafana/data/datetime/rangeutil.d.ts(403,27)
+      TS1005: ',' expected.

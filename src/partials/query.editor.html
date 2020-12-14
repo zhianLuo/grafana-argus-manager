@@ -1,25 +1,61 @@
 <query-editor-row query-ctrl="ctrl" class="generic-datasource-query-row" has-text-edit-mode="true">
+  <!-- 实例 -->
   <div class="gf-form-inline">
-    <div class="gf-form max-width-8">
-      <select class="gf-form-input" ng-model="ctrl.target.type" ng-options="f as f for f in ['table', 'timeserie']"></select>
+    <span class="gf-form-label width-6">实例
+      <info-popover mode="right-normal">
+        <p>?提示语？</p>
+      </info-popover>
+    </span>
+    <div class="gf-form max-width-7">
+      <!-- <select class="gf-form-input" ng-model="ctrl.target.endpoint_condition" ng-options="f as f for f in ['精确查询', '前缀匹配', '正则匹配']"></select> -->
+      <!-- <select class="gf-form-input" ng-model="ctrl.target.endpoint_condition" ng-init="ctrl.target.endpoint_condition=0"> -->
+      <select class="gf-form-input" ng-model="select.type" ng-controller="noteCtrl"
+              ng-options="act.id as act.name for act in typeList"
+              ng-init="ctrl.target.endpoint_condition=0">  
+        <!-- <option value="exact">精确查询</option>
+        <option value="prefix">前缀匹配</option>
+        <option value="regexp">正则匹配</option> -->
+      </select>
     </div>
-
-    <div class="gf-form" ng-if="ctrl.target.rawQuery">
-      <textarea class="gf-form-input" rows="5" ng-model="ctrl.target.target" spellcheck="false" ng-blur="ctrl.onChangeInternal()"></textarea>
+    <input class="gf-form-input width-30" ng-show="ctrl.target.endpoint_condition === 'exact'" type="text" ng-model="ctrl.target.endpoint" placeholder="请输入输入实例名，批量输入时使用回车键/逗号/分号/空格隔开（例：SZA6666,SZA9999）"></input>
+    <input class="gf-form-input width-30" ng-show="ctrl.target.endpoint_condition === 'prefix'" type="text" ng-model="ctrl.target.endpoint" placeholder="请输入输入实例名前缀（例：SZA）"></input>
+  </div>
+  <!-- 监控项 -->
+  <div class="gf-form-inline">
+    <span class="gf-form-label width-6">监控项
+      <info-popover mode="right-normal">
+        <p>?提示语？</p>
+      </info-popover>
+    </span>
+    <!-- <input class="gf-form-input width-30" type="text" ng-model="ctrl.current.jsonData.subscriptionId" placeholder="请输入输入监控项名（例：cup.busy）"></input> -->
+    <input class="gf-form-input width-30" type="text" ng-model="ctrl.target.metric" placeholder="请输入输入监控项名（例：cup.busy）"></input>
+  </div>
+  <!-- 标签 -->
+  <div class="gf-form-inline">
+    <span class="gf-form-label width-6">标签
+      <info-popover mode="right-normal">
+        <p>?提示语？</p>
+      </info-popover>
+    </span>
+    <input class="gf-form-input width-30" type="text" ng-model="ctrl.current.jsonData.subscriptionId" placeholder="请输入输入监控项名（例：cup.busy）"></input>
+  </div>
+  <!-- 聚合周期 -->
+  <div class="gf-form-inline">
+    <span class="gf-form-label width-6">聚合周期
+      <info-popover mode="right-normal">
+        <p>?提示语？</p>
+      </info-popover>
+    </span>
+    <div class="gf-form max-width-7">
+      <select class="gf-form-input" ng-model="ctrl.target.step" ng-options="f as f for f in ['1分钟', '3分钟', '5分钟', '10分钟', '20分钟']"></select>
     </div>
-
-    <div ng-if="!ctrl.target.rawQuery">
-      <div class="gf-form">
-        <gf-form-dropdown model="ctrl.target.target"
-          allow-custom="true"
-          lookup-text="true"
-          get-options="ctrl.getOptions($query)"
-          on-change="ctrl.onChangeInternal()">
-      </gf-form-dropdown>
-      </div>
-    </div>
-    <div class="gf-form gf-form--grow">
-      <div class="gf-form-label gf-form-label--grow"></div>
+    <span class="gf-form-label width-6">聚合方式
+      <info-popover mode="right-normal">
+        <p>?提示语？</p>
+      </info-popover>
+    </span>
+    <div class="gf-form max-width-7">
+      <select class="gf-form-input" ng-model="ctrl.target.func" ng-options="f as f for f in ['平均值', '最大值', '最小值']"></select>
     </div>
   </div>
 </query-editor-row>

@@ -1,5 +1,17 @@
-<h3 class="page-heading">Azure Monitor API Details</h3>
+<div class="gf-form-group">
+	<div class="gf-form-inline">
+		<div class="gf-form">
+			<span class="gf-form-label width-9">Argus-Manager地址</span>
+			<input class="gf-form-input width-30" type="text" ng-model='ctrl.current.jsonData.exampleField' placeholder="http://argus-manager.paic.com.cn/"></input>
+      <gf-form-switch class="gf-form" label="Same details as Azure Monitor API" label-class="width-19" switch-class="max-width-6"
+        checked="ctrl.current.jsonData.azureLogAnalyticsSameAs" on-change="ctrl.onSameAsToggle()">
+      </gf-form-switch>
+    </div>
+  </div>
+</div>
 
+
+<!-- <h3 class="page-heading">Azure Monitor API Details</h3>
 <div class="gf-form-group">
   <div class="gf-form-inline">
     <div class="gf-form">
@@ -15,8 +27,8 @@
   </div>
   <div class="gf-form-inline">
     <div class="gf-form">
-      <span class="gf-form-label width-9">Subscription Id</span>
-      <input class="gf-form-input width-30" type="text" ng-model="ctrl.current.jsonData.subscriptionId" placeholder="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"></input>
+      <span class="gf-form-label width-9">Argus-Manager地址</span>
+      <input class="gf-form-input width-30" type="text" ng-model="ctrl.current.jsonData.subscriptionId" placeholder="请输入正确的地址"></input>
       <info-popover mode="right-absolute">
         <p>In the Azure Portal, navigate to Subscriptions -> Choose subscription -> Overview -> Subscription ID.</p>
         <a target="_blank" href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal">**Click
@@ -193,4 +205,4 @@
       </info-popover>
     </div>
   </div>
-</div>
+</div> -->
