@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import { getBackendSrv } from '@grafana/runtime';
 
-export default class ChangeMyNameDatasource {
+export default class ChangeMyNameDatasource { 
   id: number;
   name: string;
 
@@ -16,7 +16,17 @@ export default class ChangeMyNameDatasource {
 
   query(options) {
     // console.log("&&&&&&", options)
-    const newoptions = options
+    const newoptions = options;
+    // if(sessionStorage.getItem('tags').length> 0 ){
+    //   const tags = JSON.parse(sessionStorage.getItem('tags'));
+    //   console.log('tags',tags)
+    // }
+    
+    // const arr = options.targets[0].exact_list.split(',')
+    // console.log('arr',arr)
+    // newoptions.endpoint_condition.exact_list = 
+    // newoptions.prefix = ''
+    // newoptions.endpoint_condition.regexp = options.targets[0].reg1 + options.targets[0].reg2;
     // if(options.targets[0].endpoint_condition === '精确查询'){
     //   options.targets[0].endpoint_condition = 'exact'
     // }
@@ -26,30 +36,30 @@ export default class ChangeMyNameDatasource {
     // if(options.targets[0].endpoint_condition === '正则匹配'){
     //   options.targets[0].endpoint_condition = 'regexp'
     // }
-    if(options.targets[0].step === '1分钟'){
-      options.targets[0].step = 60
-    }
-    if(options.targets[0].step === '3分钟'){
-      options.targets[0].step = 180
-    }
-    if(options.targets[0].step === '5分钟'){
-      options.targets[0].step = 300
-    }
-    if(options.targets[0].step === '10分钟'){
-      options.targets[0].step = 600
-    }
-    if(options.targets[0].step === '20分钟'){
-      options.targets[0].step = 1200
-    }
-    if(options.targets[0].func === '最大值'){
-      options.targets[0].func = 'max'
-    }
-    if(options.targets[0].func === '最小值'){
-      options.targets[0].func = 'min'
-    }
-    if(options.targets[0].func === '平均值'){
-      options.targets[0].func = 'mean'
-    }
+    // if(options.targets[0].step === '1分钟'){
+    //   options.targets[0].step = 60
+    // }
+    // if(options.targets[0].step === '3分钟'){
+    //   options.targets[0].step = 180
+    // }
+    // if(options.targets[0].step === '5分钟'){
+    //   options.targets[0].step = 300
+    // }
+    // if(options.targets[0].step === '10分钟'){
+    //   options.targets[0].step = 600
+    // }
+    // if(options.targets[0].step === '20分钟'){
+    //   options.targets[0].step = 1200
+    // }
+    // if(options.targets[0].func === '最大值'){
+    //   options.targets[0].func = 'max'
+    // }
+    // if(options.targets[0].func === '最小值'){
+    //   options.targets[0].func = 'min'
+    // }
+    // if(options.targets[0].func === '平均值'){
+    //   options.targets[0].func = 'mean'
+    // }
     console.log('newoptions',newoptions)
     // throw new Error("Query Support not implemented yet.");
     const { range } = options;

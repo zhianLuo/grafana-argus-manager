@@ -7,55 +7,183 @@
       </info-popover>
     </span>
     <div class="gf-form max-width-7">
-      <!-- <select class="gf-form-input" ng-model="ctrl.target.endpoint_condition" ng-options="f as f for f in ['精确查询', '前缀匹配', '正则匹配']"></select> -->
-      <!-- <select class="gf-form-input" ng-model="ctrl.target.endpoint_condition" ng-init="ctrl.target.endpoint_condition=0"> -->
-      <select class="gf-form-input" ng-model="select.type" ng-controller="noteCtrl"
-              ng-options="act.id as act.name for act in typeList"
-              ng-init="ctrl.target.endpoint_condition=0">  
-        <!-- <option value="exact">精确查询</option>
-        <option value="prefix">前缀匹配</option>
-        <option value="regexp">正则匹配</option> -->
+      <select 
+        class="gf-form-input" 
+        ng-model="ctrl.target.endpoint_condition_name" 
+        ng-init="ctrl.target.endpoint_condition_name=ctrl.target.endpoint_condition_name || 'exact'" 
+        ng-options="k as v for (k,v) in {'exact':'精确查询', 'prefix':'前缀匹配', 'regexp':'正则匹配'}">
       </select>
     </div>
-    <input class="gf-form-input width-30" ng-show="ctrl.target.endpoint_condition === 'exact'" type="text" ng-model="ctrl.target.endpoint" placeholder="请输入输入实例名，批量输入时使用回车键/逗号/分号/空格隔开（例：SZA6666,SZA9999）"></input>
-    <input class="gf-form-input width-30" ng-show="ctrl.target.endpoint_condition === 'prefix'" type="text" ng-model="ctrl.target.endpoint" placeholder="请输入输入实例名前缀（例：SZA）"></input>
+    <div ng-show="ctrl.target.endpoint_condition_name === 'exact'" ng-style="{width:'1152px'}">
+      <input class="gf-form-input width-40" type="text" ng-model="ctrl.target.exact_list" placeholder="请输入输入实例名，批量输入时使用回车键/逗号/分号/空格隔开（例：SZA6666,SZA9999）"></input>
+    </div>
+    <div ng-show="ctrl.target.endpoint_condition_name === 'prefix'" ng-style="{width:'1152px'}">
+      <input class="gf-form-input width-40" type="text" ng-model="ctrl.target.endpoint_condition.prefix" placeholder="请输入输入实例名前缀（例：SZA）"></input>
+    </div>
+    <div class="gf-form-inline" ng-show="ctrl.target.endpoint_condition_name === 'regexp'">
+      <span class="gf-form-label width-4">前缀匹配</span>
+      <input class="gf-form-input width-30" type="text" ng-model="ctrl.target.reg1" placeholder="请输入输入实例名前缀（例：SZA）"></input>
+      <label class="gf-form-label query-keyword width-3">AND</label>
+      <span class="gf-form-label width-4">正则匹配</span>
+      <input class="gf-form-input width-30" type="text" ng-model="ctrl.target.reg2" placeholder="请输入输入实正则表达式（例：123）"></input>
+    </div>
   </div>
   <!-- 监控项 -->
-  <div class="gf-form-inline">
-    <span class="gf-form-label width-6">监控项
-      <info-popover mode="right-normal">
-        <p>?提示语？</p>
-      </info-popover>
-    </span>
-    <!-- <input class="gf-form-input width-30" type="text" ng-model="ctrl.current.jsonData.subscriptionId" placeholder="请输入输入监控项名（例：cup.busy）"></input> -->
-    <input class="gf-form-input width-30" type="text" ng-model="ctrl.target.metric" placeholder="请输入输入监控项名（例：cup.busy）"></input>
+  <div class="gf-form">
+    <div class="gf-form-inline">
+      <span class="gf-form-label width-6">监控项
+        <info-popover mode="right-normal">
+          <p>?提示语？</p>
+        </info-popover>
+      </span>
+      <div ng-style="{width:'1263px',position:'relative'}">
+        <input 
+          class="gf-form-input width-40" 
+          type="text" 
+          ng-model="ctrl.target.metric" 
+          placeholder="请输入输入监控项名（例：cup.busy）"
+          ng-focus="ctrl.monitorFocus()" 
+          ng-blur="ctrl.monitoBlur()"
+          ng-change="ctrl.monitorChange()" 
+          ></input>
+          <!-- ng-show="ctrl.monitorSelectBox" -->
+        <div 
+          ng-style="{width:'1263px',height:'180px',border:'1px solid rgb(99, 148, 235)',position:'absolute',top:'32px',left:'1px',zIndex:'999',background:'rgb(11, 12, 14)',overflow:'auto'}"
+          ng-show="ctrl.monitorSelectBox"
+          >
+            <div ng-style="{width:'100%',padding:'5px'}">
+              <label 
+                class="gf-form-label" 
+                ng-repeat="(key, value) in ctrl.monitorSeachArr track by $index"
+                ng-mouseover="ctrl.monitorMouseover()" 
+                ng-mouseleave="ctrl.monitorMouseleave()"
+                ng-style="{color:ctrl.color,margin:'2px 0 2px 2px',width:'95%'}"
+                ng-click="ctrl.monitorItemClick(key, value)"
+                >
+                {{value}}
+              </label>
+            </div>
+              <!-- 关闭按钮 -->
+              <a ng-click="ctrl.closeMonitorBox()" ng-style="{position:'absolute',top:'2px',right:'2px'}">
+                <icon name="'times'">
+                  <div class="css-1vzus6i-Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" class="css-sr6nr">
+                    <path d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path>
+                  </svg>
+                  </div>
+                </icon>
+              </a>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- 标签 -->
-  <div class="gf-form-inline">
-    <span class="gf-form-label width-6">标签
-      <info-popover mode="right-normal">
-        <p>?提示语？</p>
-      </info-popover>
-    </span>
-    <input class="gf-form-input width-30" type="text" ng-model="ctrl.current.jsonData.subscriptionId" placeholder="请输入输入监控项名（例：cup.busy）"></input>
-  </div>
+  <!-- <div class="gf-form"> -->
+    <div class="gf-form-inline" ng-style="{width:'100%'}">
+      <span class="gf-form-label width-6">标签
+        <info-popover mode="right-normal">
+          <p>?提示语？</p>
+        </info-popover>
+      </span>
+      <!-- 标签循环 -->
+      <div class="gf-form" ng-repeat="(key, value) in ctrl.target.tags track by $index">
+        <label class="gf-form-label">
+          {{value.key}}&nbsp;=&nbsp;{{value.text}}
+          <a ng-click="ctrl.editTag(key, value)">
+            <icon name="'pen'"><div class="css-1vzus6i-Icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="css-sr6nr"><path d="M22,7.24a1,1,0,0,0-.29-.71L17.47,2.29A1,1,0,0,0,16.76,2a1,1,0,0,0-.71.29L13.22,5.12h0L2.29,16.05a1,1,0,0,0-.29.71V21a1,1,0,0,0,1,1H7.24A1,1,0,0,0,8,21.71L18.87,10.78h0L21.71,8a1.19,1.19,0,0,0,.22-.33,1,1,0,0,0,0-.24.7.7,0,0,0,0-.14ZM6.83,20H4V17.17l9.93-9.93,2.83,2.83ZM18.17,8.66,15.34,5.83l1.42-1.41,2.82,2.82Z"></path></svg></div></icon>
+          </a>
+          <a ng-click="ctrl.removeTag(key)">
+            <icon name="'times'"><div class="css-1vzus6i-Icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="css-sr6nr"><path d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path></svg></div></icon>
+          </a>
+        </label>
+      </div>
+      <!-- 新增标签 -->
+      <div class="gf-form" ng-show="ctrl.addTagMode"> 
+        <input ng-model="ctrl.tagKye" type="text" class="gf-form-input ng-valid ng-dirty ng-touched ng-empty width-10" spellcheck="false" bs-typeahead="ctrl.suggestTagKeys" data-min-length="0" data-items="100" placeholder="key" data-provide="typeahead">
+        <select 
+          class="gf-form-input width-6" 
+          ng-model="ctrl.tagSelectValue" 
+          ng-init="ctrl.tagSelectValue='exact'" 
+          ng-options="k as v for (k,v) in {'exact':'精确查询', 'prefix':'前缀匹配', 'regexp':'正则匹配'}"
+        ></select>
+        <div class="gf-form-inline">
+          <input ng-show="ctrl.tagSelectValue==='exact'" ng-model="ctrl.tagValue1" type="text" class="gf-form-input ng-valid ng-dirty ng-touched ng-empty" spellcheck="false" bs-typeahead="ctrl.suggestTagValues" data-min-length="0" data-items="100"  placeholder="value(例：AABB)" data-provide="typeahead">
+          <input ng-show="ctrl.tagSelectValue==='prefix'" ng-model="ctrl.tagValue1" type="text" class="gf-form-input ng-valid ng-dirty ng-touched ng-empty" spellcheck="false" bs-typeahead="ctrl.suggestTagValues" data-min-length="0" data-items="100"  placeholder="value(例：AA)" data-provide="typeahead">
+        </div>
+        <!-- 正则类型 -->
+        <div ng-show="ctrl.tagSelectValue ==='regexp'" class="gf-form-inline">
+          <span class="gf-form-label width-4">前缀匹配</span>
+          <input class="gf-form-input width-10" type="text" ng-model="ctrl.tagValue1" placeholder="value(例：AABB)"></input>
+          <label class="gf-form-label query-keyword width-3">AND</label>
+          <span class="gf-form-label width-4">正则匹配</span>
+          <input class="gf-form-input width-10" type="text" ng-model="ctrl.tagValue2" placeholder="value(例：56$)"></input>
+        </div>
+        <!-- <div ng-show="ctrl.tagSelectValue ==='regexp'" class="gf-form-inline">
+          <span class="gf-form-label width-4">前缀匹配</span>
+          <input class="gf-form-input ng-valid ng-dirty ng-touched ng-empty" type="text" ng-model="ctrl.tagValue" placeholder="请输入输入实例名前缀（例：SZA）"></input>
+          <label class="gf-form-label query-keyword width-3">AND</label>
+          <span class="gf-form-label width-4">正则匹配</span>
+          <input class="gf-form-input ng-valid ng-dirty ng-touched ng-empty" type="text" ng-model="ctrl.tagValue2" placeholder="请输入输入实正则表达式（例：123）"></input>
+        </div> -->
+
+
+        <label class="gf-form-label ng-hide" ng-show="ctrl.errors.tags">
+          <a bs-tooltip="ctrl.errors.tags" style="color:#e5bd1c" data-original-title="" title="">
+            <icon name="'exclamation-triangle'"><div class="css-1vzus6i-Icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="css-sr6nr"><path d="M12,16a1,1,0,1,0,1,1A1,1,0,0,0,12,16Zm10.67,1.47-8.05-14a3,3,0,0,0-5.24,0l-8,14A3,3,0,0,0,3.94,22H20.06a3,3,0,0,0,2.61-4.53Zm-1.73,2a1,1,0,0,1-.88.51H3.94a1,1,0,0,1-.88-.51,1,1,0,0,1,0-1l8-14a1,1,0,0,1,1.78,0l8.05,14A1,1,0,0,1,20.94,19.49ZM12,8a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V9A1,1,0,0,0,12,8Z"></path></svg></div></icon>
+          </a>
+        </label>
+        <label class="gf-form-label">
+          <a ng-click="ctrl.addTag()" ng-hide="ctrl.errors.tags" class="">add tag</a>
+          <a ng-click="ctrl.closeAddTagMode()"><icon name="'times'" size="'sm'"><div class="css-1vzus6i-Icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="css-sr6nr"><path d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path></svg></div></icon></a>
+        </label>
+      </div>
+      <!-- 按钮 -->
+      <div class="gf-form-inline" ng-hide="ctrl.addTagMode"> 
+        <div class="gf-form">
+          <label class="gf-form-label query-keyword">
+            <a ng-click="ctrl.addTag()">
+              <icon name="'plus'">
+                <div class="css-1vzus6i-Icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="css-sr6nr">
+                    <path d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z"></path>
+                  </svg>
+                </div>
+              </icon>
+            </a>
+          </label>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
   <!-- 聚合周期 -->
-  <div class="gf-form-inline">
-    <span class="gf-form-label width-6">聚合周期
-      <info-popover mode="right-normal">
-        <p>?提示语？</p>
-      </info-popover>
-    </span>
-    <div class="gf-form max-width-7">
-      <select class="gf-form-input" ng-model="ctrl.target.step" ng-options="f as f for f in ['1分钟', '3分钟', '5分钟', '10分钟', '20分钟']"></select>
+    <div class="gf-form-inline">
+      <span class="gf-form-label width-6">聚合周期
+        <info-popover mode="right-normal">
+          <p>?提示语？</p>
+        </info-popover>
+      </span>
+      <div class="gf-form max-width-7">
+        <select 
+          class="gf-form-input" 
+          ng-init="ctrl.target.step=ctrl.target.step || '60'"  
+          ng-model="ctrl.target.step"
+          ng-options="k as v for (k,v) in {60:'1分钟', 180:'3分钟', 300:'5分钟',600:'10分钟',1200:'20分钟'}"
+          ></select>
+      </div>
+      <span class="gf-form-label width-6">聚合方式
+        <info-popover mode="right-normal">
+          <p>?提示语？</p>
+        </info-popover>
+      </span>
+      <div class="gf-form max-width-7">
+        <select 
+          class="gf-form-input" 
+          ng-model="ctrl.target.func" 
+          ng-init="ctrl.target.func=ctrl.target.func|| 'mean'"
+          ng-options="k as v for (k,v) in {mean:'平均值', max:'最大值', min:'最小值'}"
+          ></select>
+      </div>
     </div>
-    <span class="gf-form-label width-6">聚合方式
-      <info-popover mode="right-normal">
-        <p>?提示语？</p>
-      </info-popover>
-    </span>
-    <div class="gf-form max-width-7">
-      <select class="gf-form-input" ng-model="ctrl.target.func" ng-options="f as f for f in ['平均值', '最大值', '最小值']"></select>
-    </div>
-  </div>
+  <!-- test -->
+  
 </query-editor-row>
